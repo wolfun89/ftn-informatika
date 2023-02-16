@@ -165,8 +165,8 @@ class Utakmica extends React.Component {
             if (admin) {
                 return (
                     <tr key={utakmica.id}>
-                        <td>{utakmica.reprezentacijaAId}</td>
-                        <td>{utakmica.reprezentacijaBId}</td>
+                        <td>{utakmica.reprezentacijaA.naziv}</td>
+                        <td>{utakmica.reprezentacijaB.naziv}</td>
                         <td>{utakmica.brojGolovaA}</td>
                         <td>{utakmica.brojGolovaB}</td>
                         <td><Button variant="success" onClick={() => this.addToReprezentacijaA()}>A+1</Button></td>
