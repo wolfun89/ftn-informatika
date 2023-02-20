@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import ZavrsniAxios from "../../apis/ZavrsniAxios";
 
-class AddOrEditClass extends React.Component {
+class DodajUtakmicu extends React.Component {
 
     constructor(props) {
         super(props);
@@ -124,4 +124,4 @@ class AddOrEditClass extends React.Component {
 
 }
 
-export default AddOrEditClass
+export default DodajUtakmicu

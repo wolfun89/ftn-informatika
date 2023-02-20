@@ -6,10 +6,10 @@ import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { logout } from './services/auth';
 import NotFound from "./components/NotFound";
 import Home from "./components/Home";
-import AddOrEditClass from './components/entity/DodajUtakmicu';
 import Login from "./components/authorization/Login"
 import Utakmica from './components/entity/Utakmica';
 import Igrac from './components/entity/Igrac';
+import DodajUtakmicu from './components/entity/DodajUtakmicu';
 
 class App extends React.Component {
   // constructor(props) {
@@ -51,7 +51,7 @@ class App extends React.Component {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/utakmice" element={<Utakmica />} />
-              <Route path="/utakmice/edit/:id" element={<AddOrEditClass />} />
+              <Route path="/utakmice/edit/:id" element={<DodajUtakmicu />} />
               <Route path="/login" element={<Login />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/utakmice/igrac" element={<Igrac />} />
