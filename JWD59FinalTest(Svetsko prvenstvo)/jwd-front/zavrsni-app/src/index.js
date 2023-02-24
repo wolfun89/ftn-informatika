@@ -51,7 +51,7 @@ class App extends React.Component {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/utakmice" element={<Utakmica />} />
-              <Route path="/utakmice/edit/:id" element={<DodajUtakmicu />} />
+              <Route path="/utakmice/add/:id" element={<DodajUtakmicu />} />
               <Route path="/login" element={<Login />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/utakmice/igrac" element={<Igrac />} />
