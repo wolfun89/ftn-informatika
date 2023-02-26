@@ -17,6 +17,7 @@ public class IgracToIgracDTO implements Converter<Igrac, IgracDTO>{
 		IgracDTO dto = new IgracDTO();
 		dto.setId(i.getId());
 		dto.setIme(i.getIme());
+		dto.setPrezime(i.getPrezime());
 		dto.setPostignutiGolovi(i.getPostignutiGolovi());
 		return dto;
 	}

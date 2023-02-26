@@ -45,10 +45,10 @@ class DodajUtakmicu extends React.Component {
     async create() {
 
         let params = {
-            'reprezentacijaAId': { id: this.state.utakmica.reprezentacijaA.id },
-            'reprezentacijaBId': { id: this.state.utakmica.reprezentacijaB.id },
-            'brojGolovaA': this.state.brojGolovaA.id,
-            'brojGolovaB': this.state.brojGolovaB.id
+            'reprezentacijaAId': { id: this.state.utakmice.reprezentacijaAId },
+            'reprezentacijaBId': { id: this.state.utakmice.reprezentacijaBId },
+            'brojGolovaA': this.state.brojGolovaA,
+            'brojGolovaB': this.state.brojGolovaB
         };
 
         await ZavrsniAxios.post("/utakmice", params)
