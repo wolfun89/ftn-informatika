@@ -30,8 +30,7 @@ public class UtakmicaDTOToUtakmica implements Converter<UtakmicaDTO, Utakmica>{
         }else{
             utakmica = utakmicaService.findOneById(dto.getId());
         }
-		if(utakmica != null && 
-				(!(utakmica.getReprezentacijaA().getId().equals(utakmica.getReprezentacijaB().getId())))) {
+		if(utakmica != null) {
 			utakmica.setReprezentacijaA(reprezentacijaService.findOneById(dto.getReprezentacijaA().getId()));
 			utakmica.setReprezentacijaB(reprezentacijaService.findOneById(dto.getReprezentacijaB().getId()));
 			utakmica.setBrojGolovaA(0);

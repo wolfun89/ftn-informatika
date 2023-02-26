@@ -94,7 +94,7 @@ class DodajUtakmicu extends React.Component {
                                     <option value={null}></option>
                                     {this.state.reprezentacije.map((reprezentacija) => {
                                         return (
-                                            <option value={reprezentacija.id} key={reprezentacija.id}>{reprezentacija.naziv}</option>
+                                            <option value={reprezentacija.id} key={reprezentacija.id}>{reprezentacija.skraceniNaziv}</option>
                                         );
                                     })}
                                 </Form.Select>
@@ -105,7 +105,7 @@ class DodajUtakmicu extends React.Component {
                                     <option value={null}></option>
                                     {this.state.reprezentacije.map((reprezentacija) => {
                                         return (
-                                            <option value={reprezentacija.id} key={reprezentacija.id}>{reprezentacija.naziv}</option>
+                                            <option value={reprezentacija.id} key={reprezentacija.id}>{reprezentacija.skraceniNaziv}</option>
                                         );
                                     })}
                                 </Form.Select>
