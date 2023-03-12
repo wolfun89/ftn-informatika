@@ -16,9 +16,9 @@ public interface UtakmicaRepository extends JpaRepository<Utakmica, Long>{
 	Page<Utakmica> findByReprezentacijaAIdAndReprezentacijaBId(Long reprezentacijaAId, Long reprezentacijaBId,
 			Pageable p);
 
-	Page<Utakmica> findByReprezentacijaAId(Long reprezentacijaAId, PageRequest of);
+	Page<Utakmica> findByReprezentacijaAId(Long reprezentacijaAId, Pageable p);
 
-	Page<Utakmica> findByReprezentacijaBId(Long reprezentacijaBId, PageRequest of);
+	Page<Utakmica> findByReprezentacijaBId(Long reprezentacijaBId, Pageable p);
 	
 	
 
